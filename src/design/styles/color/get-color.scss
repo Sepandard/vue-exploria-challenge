@@ -1,0 +1,8 @@
+@use '../tokens/config';
+@use 'sass:string';
+
+@function get-color($scheme) {
+    @return string.unquote(
+       'var(--#{config.$css-prefix}-#{$scheme})'
+     );
+ }

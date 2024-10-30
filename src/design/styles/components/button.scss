@@ -1,0 +1,21 @@
+// todo: use get-color
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var(--exploria-secondary);
+    background-color: var(--exploria-primary);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--exploria-primary);
+}
+
+button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+  color: #6c757d;
+}
